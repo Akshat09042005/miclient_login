@@ -1,14 +1,7 @@
 import { useMemo, useState } from 'react'
+import { Briefcase, UserRound } from 'lucide-react'
 import RoleCard from '../components/RoleCard.jsx'
 import SocialButton from '../components/SocialButton.jsx'
-
-function Emoji({ value, className }) {
-  return (
-    <span className={className} role="img" aria-hidden="true">
-      {value}
-    </span>
-  )
-}
 
 function GoogleLogo() {
   return (
@@ -59,12 +52,12 @@ const ROLES = [
   {
     key: 'employee',
     title: 'Employee',
-    icon: <Emoji value="🧑‍💻" className="text-2xl leading-none" />,
+    icon: <UserRound className="size-7 text-slate-700" aria-hidden="true" />,
   },
   {
     key: 'employer',
     title: 'Employer',
-    icon: <Emoji value="💼" className="text-2xl leading-none" />,
+    icon: <Briefcase className="size-7 text-slate-700" aria-hidden="true" />,
   },
 ]
 
@@ -99,7 +92,7 @@ export default function SignupPage() {
       <div className="relative w-full max-w-sm -translate-y-8">
         <div className="flex items-center justify-center gap-2 text-white">
           <div className="grid size-14 place-items-center rounded-lg bg-transparent">
-            <Emoji value="💼" className="text-4xl leading-none drop-shadow" />
+            <Briefcase className="size-10 drop-shadow" aria-hidden="true" />
           </div>
           <div className="text-3xl font-extrabold leading-none tracking-wide">
             Hirabl

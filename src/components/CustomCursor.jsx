@@ -71,13 +71,13 @@ export default function CustomCursor() {
       {/* faint ring */}
       <div
         ref={ringRef}
-        className="pointer-events-none fixed left-0 top-0 z-[9999] size-10 rounded-full border-[3px] border-neutral-700"
+        className="pointer-events-none fixed left-0 top-0 z-89 size-10 rounded-full border-[3px] border-neutral-700"
       />
 
       {/* dot */}
       <div
         ref={dotRef}
-        className="pointer-events-none fixed left-0 top-0 z-[10000] size-4 rounded-full bg-black shadow-[0_0_0_6px_rgba(0,0,0,0.10)]"
+        className="pointer-events-none fixed left-0 top-0 z-99 size-4 rounded-full bg-black shadow-[0_0_0_6px_rgba(0,0,0,0.10)]"
       />
     </>
   )
