@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import {useState } from 'react'
 import { Briefcase, UserRound } from 'lucide-react'
 import RoleCard from '../components/RoleCard.jsx'
 import SocialButton from '../components/SocialButton.jsx'
