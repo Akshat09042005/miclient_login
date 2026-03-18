@@ -70,10 +70,8 @@ const PROVIDERS = [
 export default function SignupPage() {
   const [selectedRole, setSelectedRole] = useState(null)
 
-  const selectedRoleTitle = useMemo(() => {
-    const found = ROLES.find((r) => r.key === selectedRole)
-    return found?.title ?? null
-  }, [selectedRole])
+const selectedRoleTitle =
+  ROLES.find((r) => r.key === selectedRole)?.title || null
 
   function onProviderClick(provider) {
     if (!selectedRole) {
