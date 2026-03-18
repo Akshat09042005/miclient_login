@@ -28,11 +28,11 @@ function GoogleLogo() {
 
 function MicrosoftLogo() {
   return (
-    <span className="grid grid-cols-2 gap-[2px]" aria-hidden="true">
-      <span className="size-[7px] bg-[#F25022]" />
-      <span className="size-[7px] bg-[#7FBA00]" />
-      <span className="size-[7px] bg-[#00A4EF]" />
-      <span className="size-[7px] bg-[#FFB900]" />
+    <span className="grid grid-cols-2 gap-0.5 " aria-hidden="true">
+      <span className="w-2 h-2  bg-[#F25022]" />
+      <span className="w-2 h-2  bg-[#7FBA00]" />
+      <span className="w-2 h-2  bg-[#00A4EF]" />
+      <span className="w-2 h-2  bg-[#FFB900]" />
     </span>
   )
 }
@@ -86,7 +86,7 @@ const selectedRoleTitle =
   }
 
   return (
-    <div className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-b from-blue-600 to-indigo-700 p-4">
+    <div className="relative flex min-h-screen items-center justify-center overflow-hidden bg-linear-to-b from-blue-600 to-indigo-700 p-4">
       <div className="relative w-full max-w-sm -translate-y-8">
         <div className="flex items-center justify-center gap-2 text-white">
           <div className="grid size-14 place-items-center rounded-lg bg-transparent">
