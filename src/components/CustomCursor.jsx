@@ -14,7 +14,6 @@ export default function CustomCursor() {
   const dotRef = useRef(null)
   const ringRef = useRef(null)
 
-  // current + target positions (for smooth trailing ring)
   const target = useRef({ x: 0, y: 0 })
   const ring = useRef({ x: 0, y: 0 })
   const rafId = useRef(null)
@@ -37,7 +36,7 @@ export default function CustomCursor() {
       const dx = target.current.x - ring.current.x
       const dy = target.current.y - ring.current.y
 
-      // ring lags behind a bit
+   
       ring.current.x += dx * 0.12
       ring.current.y += dy * 0.12
 
