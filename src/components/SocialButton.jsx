@@ -22,7 +22,6 @@ export default function SocialButton({
         <span
           className={[
             'grid size-6 place-items-center rounded-sm',
-            // Yahoo: let icon blend into the purple button
             isYahoo ? 'bg-transparent' : 'bg-white',
           ].join(' ')}
         >
